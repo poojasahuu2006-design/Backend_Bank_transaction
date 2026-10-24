@@ -1,20 +1,44 @@
 # 🏦 Banking Transaction Ledger (Backend)
 
-[![Live API](https://img.shields.io/badge/Live%20API-Render-brightgreen?style=for-the-badge&logo=render)](https://backend-bank-transaction-1.onrender.com)
-[![Swagger UI](https://img.shields.io/badge/API%20Docs-Swagger-85EA2D?style=for-the-badge&logo=swagger)](https://backend-bank-transaction-1.onrender.com/api-docs)
-[![Node.js](https://img.shields.io/badge/Node.js-20.x-339933?style=for-the-badge&logo=node.js)](https://nodejs.org/)
-[![Express.js](https://img.shields.io/badge/Express.js-5.x-000000?style=for-the-badge&logo=express)](https://expressjs.com/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/atlas)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Render_Cloud-brightgreen?style=for-the-badge&logo=render)](https://backend-bank-transaction-1.onrender.com/api-docs)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/poojasahuu2006-design/Backend_Bank_transaction)
+[![Swagger UI](https://img.shields.io/badge/API%20Docs-OpenAPI_3.0-85EA2D?style=for-the-badge&logo=swagger)](https://backend-bank-transaction-1.onrender.com/api-docs)
+[![Node.js](https://img.shields.io/badge/Backend-Node.js_20-339933?style=for-the-badge&logo=node.js)](https://nodejs.org)
+[![MongoDB Atlas](https://img.shields.io/badge/Database-MongoDB_Atlas-47A248?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/atlas)
+[![Docker](https://img.shields.io/badge/Container-Docker-2496ED?style=for-the-badge&logo=docker)](https://www.docker.com/)
 
-A production-ready, event-sourced banking ledger backend built with **Node.js**, **Express.js**, and **MongoDB Atlas**. This project implements a **double-entry ledger architecture** with strict **ACID-compliant MongoDB transaction sessions** to ensure financial data integrity during deposits, withdrawals, and inter-account money transfers.
+A production-ready, event-sourced banking ledger backend built with **Node.js**, **Express.js**, and **MongoDB Atlas**. This project implements a **double-entry ledger architecture** with strict **ACID-compliant MongoDB transaction sessions** to ensure absolute data integrity during deposits, withdrawals, and inter-account transfers.
 
 ---
 
-## 🌐 Live Deployment & Interactive Documentation
+## 🚀 Live Demo & Interactive Testing
 
-- **🚀 Live API Base URL:** [https://backend-bank-transaction-1.onrender.com](https://backend-bank-transaction-1.onrender.com)
-- **📖 Interactive Swagger Documentation:** [https://backend-bank-transaction-1.onrender.com/api-docs](https://backend-bank-transaction-1.onrender.com/api-docs)
-- **🩺 Health Check:** [https://backend-bank-transaction-1.onrender.com/health](https://backend-bank-transaction-1.onrender.com/health)
+Experience the live API in your browser using interactive Swagger documentation:
+
+[![Try Live Demo](https://img.shields.io/badge/🔗_Launch_Live_Demo-Swagger_UI-00C853?style=for-the-badge&logo=swagger&logoColor=white)](https://backend-bank-transaction-1.onrender.com/api-docs)
+
+| Resource | URL | Status |
+|---|---|---|
+| 🌐 **Live Demo (Interactive Swagger UI)** | [https://backend-bank-transaction-1.onrender.com/api-docs](https://backend-bank-transaction-1.onrender.com/api-docs) | ![Online](https://img.shields.io/badge/Status-Online-brightgreen) |
+| 🚀 **API Base URL** | [https://backend-bank-transaction-1.onrender.com](https://backend-bank-transaction-1.onrender.com) | ![Online](https://img.shields.io/badge/Status-Online-brightgreen) |
+| 🩺 **Health Check** | [https://backend-bank-transaction-1.onrender.com/health](https://backend-bank-transaction-1.onrender.com/health) | ![Healthy](https://img.shields.io/badge/Health-200_OK-brightgreen) |
+
+---
+
+## 🧪 How to Test in the Live Demo (30 Seconds Walkthrough)
+
+You can test the entire banking system directly without installing anything:
+
+1. **Open the Live Demo**: Click [**Launch Live Demo**](https://backend-bank-transaction-1.onrender.com/api-docs).
+2. **Create Account**:
+   - Scroll to **Accounts** → `POST /api/accounts` → Click **Try it out** → **Execute**.
+   - Copy the generated `_id` or `accountNumber`.
+3. **Deposit Funds**:
+   - Scroll to **Transactions** → `POST /api/transactions/deposit` → Input your `accountId` and `amount: 5000` → **Execute**.
+4. **Transfer Funds**:
+   - Scroll to **Transactions** → `POST /api/transactions` → Transfer funds between two accounts inside an atomic ACID session.
+5. **Inspect Live Ledger Balance**:
+   - Scroll to **Ledger** → `GET /api/ledge/balance/{accountId}` → Verify real-time balance computed dynamically from immutable records!
 
 ---
 
